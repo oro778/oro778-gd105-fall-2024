@@ -13,6 +13,7 @@ void setup() {
   size(800, 800);
   background(#b33815);
   noSmooth();
+  frameRate(25);
   
   squ = new PVector(width/3, height/3);
   squVelo = PVector.random2D().mult(5);
