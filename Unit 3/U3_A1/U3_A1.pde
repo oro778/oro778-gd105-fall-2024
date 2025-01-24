@@ -52,3 +52,13 @@ void draw() {
       fill(255);
       text(m, width/2 + 15, height/2);
     }
+    if (key == 's' || key == '3') {
+      fill(#031524);
+      rect(400, 0, 400, 400);
+      fill(255);
+      text(s, width*0.90, height/2);
+      fill(0);
+      rect(0, 0, 400, 400);
+    }
+  }
+}
