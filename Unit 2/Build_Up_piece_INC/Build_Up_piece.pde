@@ -5,11 +5,11 @@ void setup(){
 }
 
 void draw(){
- fill(#293384);
+ fill(#293384, 5);
  strokeWeight(1);
   square(300, 0, 600);
   
- fill(#8D4004);
+ fill(#8D4004, 5);
  strokeWeight(1);
  square(328, 105, 440);
   

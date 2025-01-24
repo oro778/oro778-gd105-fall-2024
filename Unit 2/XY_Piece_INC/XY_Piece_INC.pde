@@ -1,26 +1,27 @@
-void setup(){
+void setup() {
   size(600, 600);
   background(#305030);
   frameRate(20);
 }
 
 void draw() {
-  
+
   int time = second() % 100;
   float end = map(time, 0, 1, TAU * 0.25, TAU * 2);
 
-  
+
   strokeWeight(2); //moving lune
-    line(width * 0.25, width * 0.50, 0, end);
-    line(width * 0.75, width * 0.50, 600, end);
+  line(width * 0.25, width * 0.50, 0, end);
+  line(width * 0.75, width * 0.50, 600, end);
 
 
   strokeWeight(5); //moving circle
   fill(100);
-    circle(width * 0.50, 
+  circle(width * 0.50,
     height * sin(frameCount * 0.3),
     width * 0.50);
-    
-  if(frameCount <= 60)
-    saveFrame("frames/frame####.png"); 
-} 
+
+  if (frameCount <= 60) {
+    saveFrame("frames/frame####.png");
+  }
+}
